@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="join.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+         .wow:first-child{
+          visibility: hidden;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Sayed <span>Tech</span></a>
+            </div>
+            <a href="javascript:void(0)" class="ham-burger">
+                <span></span>
+                <span></span>
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Services</a></li>
+                        <li><a href="index.html">Classes</a></li>
+                        <li><a href="index.html">Schedule</a></li>
+                        <li><a href="index.html">Pricing</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+
+                </div>
+            </a>
+        </div>
+    </header><br><br><br><br>
+    <section class="start-today">
+        <div class="container">
+            <div class="content">
+                <div class="box text wow slideInLeft">
+                    <h2>Web Design</h2>
+                    <p>Once successful competition of this course we will provide real world client project if you are capable doing so. Also we will help you to create your freelancer career on freelancer.com or upwork marketplace</p>
+                    <h2>Module</h2>
+                    <p>
+                        <span>Module 1: Photoshop-->Tools overview, Image editing, Typography, Layer Management</span><br>
+                        <span>Module 2: HTML-->Introduction, elements overview, media, video, audio elements overview</span><br>
+                        <span>Module 3: CSS-->Introduction, CSS types, syntax, Classes & IDs, block, inline and inline-block</span><br>
+                        <span>Module 4: PSD to HTML--> PSD slicing, PSD layers to convert, PSD design to fixed width HTML</span><br>
+                        <span>Module 5: Basic Javascript-->Introduction, writing scripts, syntax, data types & so on</span>
+                    </p>
+                    <a href="register.html" class="btn">Start Now</a>
+                </div>
+                <div class="box img wow slideInRight">
+                    <img src="images/30.jpg" alt="start today">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="start-today">
+        <div class="container">
+            <div class="content">
+                <div class="box text wow slideInLeft" data-wow-delay="0.2s">
+                    <h2>Graphic Design</h2>
+                    <p>In this course you will learn through hands-on training and demonstration from an Adobe Certified Instructor how to utilize the different tools and features available in Adobe Photoshop and Adobe Illustrator CC to maximize your creative potential</p>
+                    <h2>Module</h2>
+                    <p>
+                        <span>Module 1: Introduction-->Career path, Earning opportunities, Software Installations</span><br>
+                        <span>Module 2: Photoshop-->User interface, Cropping images, Color modes, Working with layers</span><br>
+                        <span>Module 3: Illustrator-->Artboards, Navigations, vectors, Gradients, Edit path and pen tool</span><br>
+                        <span>Module 3: PSD-->How to format, PSD for Web designers, Isolating PSD elements, Mock-up</span><br>
+                        <span>Module 4: Project Work-->Set of task will be assigned to accomplish in a dateline</span>
+                    </p>
+                    <a href="register.html" class="btn">Start Now</a>
+                </div>
+                <div class="box img wow slideInRight" data-wow-delay="0.2s">
+                    <img src="images/28.jpg" alt="start today">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="start-today">
+        <div class="container">
+            <div class="content">
+                <div class="box text wow slideInLeft" data-wow-delay="0.2s">
+                    <h2>Web Development</h2>
+                    <p>This Web Development Specialist course is an intensive hands-on course is designed to provide web developers with an in-depth understanding of the web development process and life cycle.</p>
+                    <h2>Module</h2>
+                    <p>
+                        <span>Module 1: Web Technology-->Idea on Web Designing/Development, Domain, Hosting, IP</span><br>
+                        <span>Module 2: HTML and CSS-->An assessment on your knowledge in HTML/CSS, A prerequisite</span><br>
+                        <span>Module 3: Javascript-->Fundamentals, All syntax, Data types, Arrays & so on</span><br>
+                        <span>Module 4: PHP--? PHP fundamentals to advanced, All syntax, elements & so on</span><br>
+                        <span>Module 5: SQL/MySQL-->MySQL database, DDL & DML, creating database and queries</span><br>
+                        <span>Module 6: Project -->Set of task will be assigned to accomplish in a dateline</span>
+                    </p>
+                    <a href="register.html" class="btn">Start Now</a>
+                </div>
+                <div class="box img wow slideInRight" data-wow-delay="0.2s">
+                    <img src="images/29.jpg" alt="start today">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".ham-burger").click(function(){
+                $(".nav").toggleClass("open")
+                $(this).toggleClass("active");
+            })
+            $(".accordian-container").click(function(){
+                $(".accordian-container").children(".body").slideUp();
+                $(".accordian-container").removeClass("active")
+                $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+                $(this).children(".body").slideDown();
+                $(this).addClass("active")
+                $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+            })
+  })
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+          {
+            animateClass: 'animated',
+            offset: 0,
+          }
+        );
+        wow.init();
+      </script>
+
+</body>
+</html>
